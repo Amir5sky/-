@@ -24,13 +24,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong');
+    	message.channel.send('pong');
   	}
 });
 
 client.on('message', message => {
     if (message.content === 'توجيزر') {
-    	message.reply('فور ايفر :heart: ');
+    	message.channel.send('فور ايفر :heart:');
   	}
 });
 
